@@ -1,0 +1,594 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- icon page -->
+    <link rel = "icon" href ="image/icon2.png"
+    type = "image/x-icon" >
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--CSS for navigation bar-->
+<br>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(63, 141, 135);
+  width: 44%;
+  min-height: auto;
+  position: relative;
+  border: 5px solid rgb(0, 0, 0);
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #b37ed0;
+  color: white;
+}
+</style>
+
+
+
+<!--css for background page-->
+<style>
+    html { 
+        background: url(image/bg9.jpeg) no-repeat center fixed;
+        background-size: cover;
+    }
+    .nav ul{
+            list-style:none;
+            background:#ccc;
+            text-align:center;
+            padding:0;
+            margin:0;
+    }
+    .nav li {
+             display:inline-block;
+    }
+    .nav a{
+           text-decorated:none;
+           color:#fff;
+           width:100px;
+           display:block;
+           padding:15px;
+           font-size:17px;
+           font-family:Helvetica;
+           transition:0.6s;
+    }
+    .nav a:hover {
+                  background:#C0C0C0;
+                  transition:0.6s;
+    }
+    image{
+        border: ;
+    }
+    </style>
+
+ <!--css for frame-->   
+    <style>
+  :root {
+	--skintone-color: #DE9B72;
+	--dark-color: #3A3D3E;
+}
+
+.main {
+    height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+
+.body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-size: 140%!important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+@media (min-width: 992px) {
+	.body {
+	    background-size: 148vh!important;
+	    background-repeat: no-repeat !important;
+	    background-position: 50% -31vh!important;
+	}
+}
+
+.row {
+	margin-right: 0;
+    margin-left: 0;
+}
+
+.social-row {
+	display: flex;
+    flex-direction: column;
+    right: 0;
+    position: absolute;
+}
+
+@media (min-width: 768px) {
+	.social-row {
+		position: relative;
+	  	flex-direction: row;
+	  	justify-content: flex-end;
+	}
+}
+
+.social-row a {
+    width: 2em;
+    height: 2em;
+    background-repeat: no-repeat;
+    background-size: contain;
+   	padding: 1em 0;
+    z-index: 99;
+    margin-bottom: 1em;
+  	margin-right: 1em;
+}
+
+@media (min-width: 768px) {
+	.social-row a {
+	    width: 2.5em;
+  	  	height: 2.5em;
+	    padding: 1em 0;
+	    margin-bottom: 0;
+	}
+}
+
+@media (min-width: 1200px) {
+	.social-row a {
+	    width: 3em;
+	    height: 3em;
+	    padding: 0;
+	}
+}
+
+.countach {
+	font-family: countach,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.tilda-petite {
+	font-family: tilda-petite,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.montserrat {
+	font-family: montserrat, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+.skintone-text {
+	color: var(--skintone-color);
+}
+
+.dark-text {
+	color: var(--dark-color);
+}
+
+.white-text {
+	color: #fff;
+}
+
+a:hover {
+	color: #c2c2c2;
+}
+
+.dark-background {
+	background: var(--dark-color);
+    width: 1000px;
+}
+
+
+.logo {
+	width: 20vh;
+}
+
+@media (min-width: 768px) {
+	.logo {
+		width: 16em;
+	}
+}
+
+@media (min-width: 992px) {
+	.logo {
+		width: 18em;
+	}
+}
+
+@media (min-width: 1200px) {
+	.logo {
+	    width: 28vh;
+    	height: 28vh;
+	}
+}
+
+h1 {
+	font-size: 4.5vh;
+    letter-spacing: 4px;
+    padding-top: .5em;
+}
+
+@media (min-width: 992px) {
+	h1 {
+		font-size: 2.75em;
+	}
+}
+
+@media (min-width: 1200px) {
+	h1 {
+		font-size: 3em;
+	    letter-spacing: 5px;
+	}
+}
+
+.lead {
+    font-size: 1.5rem;
+  	padding-top: 0.5em;
+}
+
+@media (min-width: 992px) {
+	.lead {
+	    font-size: 2rem;
+	    padding-top: 0.5em;
+	}
+}
+
+@media (min-width: 1200px) {
+	.lead {
+    	font-size: 2.5rem;
+		padding-top: 1em;
+	}
+}
+
+p.general {
+    font-size: 2.5vh;
+    margin-bottom: 0.5em;
+    line-height: 1.25em;
+}
+
+@media (min-width: 992px) {
+	p.general {
+		font-size: 1.25em;
+		 line-height: 1.5em;
+	}
+}
+
+@media (min-width: 1200px) {
+	p.general {
+	    font-size: 1.5em;
+	}
+}
+
+
+.inner-border {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.outer-border {
+	border: 2px solid #DE9B72;
+   	height: 99%;
+    width: auto;
+    padding: 6px;
+    margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+	.outer-border {
+		height: 94%;
+	}
+}
+
+.mid-border {
+    border: 6px solid #DE9B72;
+    height: 100%;
+    width: auto;
+    padding: 6px;
+    margin: auto;
+}
+
+.inner-border {
+	position: relative;
+	border: 2px solid #DE9B72;
+    height: 100%;
+    width: auto;
+    margin: auto;
+}
+
+
+/* Decorations */
+.corner-decoration {
+	position: absolute;
+    width: 3em;
+    margin: -3px;
+}
+
+@media (min-width: 768px) {
+	.corner-decoration {
+		width: 3.5em;
+	  	margin: -4px;
+	}
+}
+
+@media (min-width: 992px) {
+	.corner-decoration {
+		width: 4em;
+	  	margin: -5px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.corner-decoration {
+		width: 5em;
+	  	margin: -6px;
+	}
+}
+
+.corner-decoration.corner-left-top {
+	left: 0;
+	top: 0;
+}
+
+.corner-decoration.corner-right-top {
+	top: 0;
+	right: 0;
+	 -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.corner-decoration.corner-right-bottom {
+	right: 0;
+	bottom: 0;
+	 -webkit-transform: scale(-1);
+  	transform: scale(-1);
+}
+
+.corner-decoration.corner-left-bottom {
+	left: 0;
+	bottom: 0;
+	-webkit-transform: scaleY(-1);
+  	transform: scaleY(-1);
+}
+
+
+.vertical-decoration {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 11em;
+}
+
+
+@media (min-width: 768px) {
+	.vertical-decoration {
+		width: 16em;
+	}
+}
+
+
+@media (min-width: 992px) {
+	.vertical-decoration {
+		width: 20em;
+	}
+}
+
+@media (min-width: 1200px) {
+	.vertical-decoration {
+		width: 27em;
+	}
+}
+
+.vertical-decoration.top {
+	top: 0;
+
+}
+
+.vertical-decoration.bottom {
+	bottom: 0;
+	-webkit-transform: scaleY(-1);
+  	transform: scaleY(-1);
+}      
+    </style> 
+
+<!--css for table-->
+<style type="text/css">
+    .tg  {border-collapse:collapse;border-spacing:0;}
+    .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+      overflow:hidden;padding:10px 5px;word-break:normal;}
+    .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+      font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+    .tg .tg-mjdq{background-color:#ffce93;border-color:inherit;font-weight:bold;text-align:left;vertical-align:top}
+    .tg .tg-opee{background-color:#ffffc7;border-color:inherit;font-weight:bold;text-align:left;vertical-align:top}
+    </style>
+<title>FAMILY </title>
+
+
+</head>
+
+<body>
+<!--navigation bar-->
+<center>
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="profile.html">Biography</a>
+  <a href="education.html">Education</a>
+  <a class="active"href="family.html">Family</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="video.html">Videos</a>
+  <a href="contact.html">Contact</a>
+</div>
+</center>
+<br>
+<div class="marquee">
+    <h1><marquee behavior="alternate" direction="left">&#9829; MY SMALL FAMILY &#9829</marquee> 
+    </div>
+
+<center>
+<div class="body dark-background">
+    <div class="outer-border">
+       <div class="mid-border">
+          <div class="inner-border">
+            <img class="corner-decoration corner-left-top" src="https://i.ibb.co/4mKvK3N/corner-decoration.jpg"></img>
+            <img class="corner-decoration corner-right-top" src="https://i.ibb.co/4mKvK3N/corner-decoration.jpg"></img>
+            <img class="corner-decoration corner-right-bottom" src="https://i.ibb.co/4mKvK3N/corner-decoration.jpg"></img>
+            <img class="corner-decoration corner-left-bottom" src="https://i.ibb.co/4mKvK3N/corner-decoration.jpg"></img>
+            <img class="vertical-decoration top" src="https://i.ibb.co/JRTK9z4/horizontally-centered-vertical-decoration.png"></img>
+            <img class="vertical-decoration bottom" src="https://i.ibb.co/JRTK9z4/horizontally-centered-vertical-decoration.png"></img>
+
+             <!-- Page Content -->
+             <div class="container">
+                <div class="row social-row">
+                    <a href="#" target="_blank" class="d-none" ></a>
+
+                </div>
+                <div class="row">
+                   <div class="col-lg-12 text-center">
+                    <center><img src="image/raya.jpg" width="40%" height="40%"></center>
+                      
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+</div>
+</center>
+<br>
+<!--info bapa-->
+<center>
+    <table class="tg" style="undefined;table-layout: fixed; width: 309px">
+        <colgroup>
+        <col style="width: 250px">
+        <col style="width: 600px">
+        </colgroup>
+        <thead>
+          <tr>
+            <th class="tg-mjdq">Name:</th>
+            <th class="tg-opee">Nik Rosmizi Bin Mat Amin</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="tg-mjdq">Age:</td>
+            <td class="tg-opee">45 years old, 26 April 1977</td>
+          </tr>
+          <tr>
+            <td class="tg-mjdq">From:</td>
+            <td class="tg-opee">Melor, Kelantan</td>
+          </tr>
+          <tr>
+            <td class="tg-mjdq">Occupation:</td>
+            <td class="tg-opee">Mechanic</td>
+          </tr>
+          <tr>
+            <td class="tg-mjdq">Hobby:</td>
+            <td class="tg-opee">Repair broken thing </td>
+          </tr>
+        </tbody>
+        </table>
+    
+</center>
+<br>
+<!--info ibu-->
+<center>
+    <table class="tg" style="undefined;table-layout: fixed; width: 309px">
+        <colgroup>
+        <col style="width: 250px">
+        <col style="width: 600px">
+        </colgroup>
+        <thead>
+          <tr>
+            <th class="tg-mjdq">Name:</th>
+            <th class="tg-opee">Norizawati Binti Hamzah </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="tg-mjdq">Age:</td>
+            <td class="tg-opee">44 years old, 21 December 1978</td>
+          </tr>
+          <tr>
+            <td class="tg-mjdq">From:</td>
+            <td class="tg-opee">Bachok, Kelantan</td>
+          </tr>
+          <tr>
+            <td class="tg-mjdq">Occupation:</td>
+            <td class="tg-opee">Housewife</td>
+          </tr>
+          <tr>
+            <td class="tg-mjdq">Hobby:</td>
+            <td class="tg-opee">Cooking new recipe </td>
+          </tr>
+        </tbody>
+        </table>
+    
+</center>
+<br>
+<!--info adik-->
+<center>
+    <table class="tg" style="undefined;table-layout: fixed; width: 309px">
+        <colgroup>
+        <col style="width: 250px">
+        <col style="width: 600px">
+        </colgroup>
+        <thead>
+          <tr>
+            <th class="tg-mjdq">Name:</th>
+            <th class="tg-opee">Nik Nazhan Harraz Bin Nik Rosmizi </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="tg-mjdq">Age:</td>
+            <td class="tg-opee">5 years old, 12 July 2017</td>
+          </tr>
+          <tr>
+            <td class="tg-mjdq">From:</td>
+            <td class="tg-opee">Desa Petaling, Kuala Lumpur</td>
+          </tr>
+          <tr>
+            <td class="tg-mjdq">Study:</td>
+            <td class="tg-opee">Tadika Kemas</td>
+          </tr>
+          <tr>
+            <td class="tg-mjdq">Hobby:</td>
+            <td class="tg-opee">Trying new toys </td>
+          </tr>
+        </tbody>
+        </table>
+        <br>
+    
+</center>
+</body>
+
+</html>
+
